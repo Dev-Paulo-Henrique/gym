@@ -1,0 +1,96 @@
+.main{
+      border: 1px solid #000;
+      border-radius: 10px;
+      width: auto;
+      height: auto;
+      box-shadow: 1px 1px 2px;
+      background: #FFF;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .together{
+          display: flex;
+          align-items: center;
+          .background{
+            border: 1px solid #000000;
+            border-radius: 50%;
+            padding: 20px;
+            background: #F95A2C;
+          }
+          .type{
+            font-size: 30px;
+          }
+        }
+        .float{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .heart {
+            //display: none;
+            margin: 10px;
+            background: #F95A2C;
+            height: 20px;
+            width: 20px;
+            transform: rotate(-45deg);
+            position: relative;
+            cursor: pointer;
+        }
+        span{
+          font-weight: normal;
+          font-size: 16px;
+          color: #ccc;
+        }
+        }
+      
+      .heart:before,
+      .heart:after {
+          content: "";
+          background: #F95A2C;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
+          position: absolute;
+      }
+      .heart:before {
+          top: -10px;
+      }
+      .heart:after {
+          left: 10px;
+      }
+
+      }
+      .title{
+        margin-top: 32px;
+        font-size: 20px;
+      }
+      .text{
+        margin-top: 16px;
+        color: #777777;
+      }
+      .author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        span>span{
+          cursor: pointer;
+          font-weight: bold;
+          color: #F95A2C;
+          margin-left: 2px;
+        }
+        .id{
+          span{
+            text-decoration: none;
+            font-weight: bold;
+            color: #F95A2C;
+            cursor: copy;
+          }
+        }
+      }
+    }

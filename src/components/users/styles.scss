@@ -1,0 +1,34 @@
+.profile{
+  margin: 16px 32px;
+  display: flex;
+  box-shadow: 0px 0px 2px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  img{
+    width: 96px;
+    border-radius: 50%
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    .name{
+      font-size: 32px;
+    }
+    .id{
+      font-size: 16px;
+      color:#aaa;
+    }
+    span{
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size:16px;
+        color: #F95A2C;
+        margin-left: 5px;
+      }
+    }
+  }
+}
